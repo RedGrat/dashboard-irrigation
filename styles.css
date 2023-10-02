@@ -1,0 +1,86 @@
+body {
+  background: #f8fff4;
+  margin:0;
+}
+
+
+header{
+  background-color: #ABE67C;
+  padding: 15px;
+  font-size: 20px;
+  text-align: center;
+  max-width: 100%;
+  color:#2c3624;
+  user-select: none;
+
+}  
+.class-setting{
+  max-width: 900px;
+
+  margin: auto;
+}
+  #id_days_of_week input, #id_shcedule input{
+    display: none;
+
+  }
+  #id_shcedule input:checked + span::first-letter{
+    font-weight: bold;
+  }
+
+
+  #id_shcedule span {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-size: 40px;
+    background-color: #ABE67C;
+    border-radius: 20px;
+    user-select: none;
+    cursor: pointer;
+    width: 24%;
+    text-align: center;
+  }
+    
+  #id_days_of_week span{
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-size: 40px;
+    background-color: #ABE67C;
+    border-radius: 20px;
+    user-select: none;
+    cursor: pointer;
+    width: 13%;
+    text-align: center;
+  }
+
+
+
+  #id_days_of_week input:checked + span,
+  #id_shcedule input:checked + span {
+    background-color: #65AD2A;
+  }
+
+  #id_days_of_week input:hover + span,
+  #id_shcedule input:hover + span {
+    opacity: 0.85;
+  }
+
+  #id_days_of_week input:active + span,
+  #id_shcedule input:active + span {
+    opacity: 0.7;
+  }
+
+
+  #id_set_time input{
+    background-color: #ABE67C;
+    border-radius: 10px;
+    font-size: 40px;
+    padding: 8px;
+    cursor: pointer;
+    border:none;
+  }
+  
+  #id_set_time span{
+    font-size: 40px;
+  }
