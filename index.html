@@ -1,73 +1,41 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
-    <title>Панель керування</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
- </head>
+  <link rel="stylesheet" href="css/style.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Панель керування Системою Автополиву</title>
+</head>
+
 
 <body>
-    <header>
-        <h1>Це панель керування Системою Автополиву</h1>
-    </header>
+  <div class="flex-container">
+    <div class="first-box">
+      <div id="current-date " class="box">
+        <p> Нд 14 лип. 10:00:00</p>
+      </div>
 
-    <br><br><br>
-<div class="class-setting">
-    <form action="" id="id_shcedule">
-        <label><input type="radio" name="work_mode" value="Кожен день"><span>Кожен день</span></label>
-        <label><input type="radio" name="work_mode" value="Через день"><span>Через день</span></label>
-        <label><input type="radio" name="work_mode" value="Дні тижня"><span>Дні тижня</span></label>
-        <label><input type="radio" name="work_mode" value="Дні місяця"><span>Дні місяця</span></label>
-    </form>
-    <br>
-    <form action="" id="id_days_of_week" name="days_of_week">
-        <label><input type="checkbox" name="work_days" value="Пн"><span>Пн</span></label>
-        <label><input type="checkbox" name="work_days" value="Вт"><span>Вс</span></label>
-        <label><input type="checkbox" name="work_days" value="Ср"><span>Ср</span></label>
-        <label><input type="checkbox" name="work_days" value="Чт"><span>Чт</span></label>
-        <label><input type="checkbox" name="work_days" value="Пт"><span>Пт</span></label>
-        <label><input type="checkbox" name="work_days" value="Сб"><span>Сб</span></label>
-        <label><input type="checkbox" name="work_days" value="Нд"><span>Нд</span></label>
+      <div id="current-tempreture" class="box">
+        <p><img src="./icons/temperature.png" class="icon"/>+32°C</p>
+      </div>
 
-    </form>
-    <br>
-    <form action="" id="id_set_time">
-        <label><span>Час початку: </span><input type="time" value="21:00" id="id_start" name="appt" required /></label>
-        <br>
-        <br>
-        <label><span>Час закінчення: </span><input type="time" value="23:00" id="id_end" name="appt" required /></label>
-    </form>
+      <div id="current-humidity" class="box">
+        <p><img src="./icons/humidity.png" class="icon"/>34%</p>
+      </div>
 
-    <br>
-    <button type="button" onclick="getSetts()">Try it</button>    
-</div>
+      <div id="current-precepitation" class="box">
+        <p>Йде дощ</p>
+      </div>
+    </div>
+    <div class="box"><p class="title-button"><img src="./icons/barrel2.png" class="icon-btn"/>Залишок води у бочці</p></div>
+    <div class="box"><p class="title-button">Полив дерев</p></div>
+    <div class="box"><p class="title-button">Полив кущів</p></div>
+    <div class="box"><p class="title-button">Полив овочевих грядок</p></div>
+    <div class="box"><p class="title-button">Полив грибів</p></div>
+    <div class="box"><p class="title-button">Полив газону</p></div>
+  </div>
 
 </body>
-
-<br><br><br>
-
-
-
-<br>
-<div class="result">
-    Режим поливу: <span id="mode_res"></span>
-    <br>
-    Дні поливу: <span id="days_res"></span>
-    <br>
-    Полив буде працювати з <span id="start_time"></span> до <span id="end_time"></span> 
-</span>
-
-    
-<br>
-<br>
-<br>
-<footer>
-    2023 september <br>
-    v.0.1
-</footer>
-
 </html>
