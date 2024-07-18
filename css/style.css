@@ -33,7 +33,7 @@ p{
   gap: 10px;
   margin-left: auto;
   margin-right:auto;
-  width:max-content;
+  width:100%;
 }
 .icon{
   height:25px;
